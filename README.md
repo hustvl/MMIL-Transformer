@@ -38,7 +38,7 @@ Note: Random grouping can also be applied in TCGA training/testing. Embedding gr
 We use the same configuration of data preprocessing as [DSMIL](https://github.com/binli123/dsmil-wsi).
 
 #### CAMELYON16 Dataset
-We use [CLAM](https://github.com/mahmoodlab/CLAM/tree/master) to preprocess CAMELYON16 in 20x.
+We use [CLAM](https://github.com/mahmoodlab/CLAM/tree/master) to preprocess CAMELYON16 at 20x.
 
 
 For TCGA testing:
