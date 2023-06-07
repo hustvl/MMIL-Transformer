@@ -62,7 +62,6 @@ python main.py \
 --test {Your_Path_to_Pretrain} \
 --num_test 10 \
 --type camelyon16 \
---overfit True \
 --num_subbags 10 \
 --mode random \
 --num_msg 1 \
