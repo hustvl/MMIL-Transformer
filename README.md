@@ -32,9 +32,9 @@ All test experiments were conducted 10 times to calculate the average ACC and AU
 
 
 ## Usage
-### Dataset
+  ### Dataset
 
-#### TCGA Dataset
+    #### TCGA Dataset
 We use the same configuration of data preprocessing as [DSMIL](https://github.com/binli123/dsmil-wsi). Or you can directly download the feature vector they provided for TCGA.
 
 #### CAMELYON16 Dataset
