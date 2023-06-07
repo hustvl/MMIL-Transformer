@@ -51,8 +51,8 @@ greatly simplified the preprocessing. Thanks again to their wonderful works!
   
 | Dataset | Link | Disk usage |
 |------------|:-----:|----|
-| `TCGA`|[HF link](https://huggingface.co/datasets/RJKiseki/TCGA)| 16GB |
-| `CAMELYON16`|[HF link](https://huggingface.co/datasets/RJKiseki/CAMELYON16)|20GB|
+| `TCGA`|[HF link](https://huggingface.co/datasets/RJKiseki/TCGA/tree/main)| 16GB |
+| `CAMELYON16`|[HF link](https://huggingface.co/datasets/RJKiseki/CAMELYON16/tree/main)|20GB|
 </div>
 
 
