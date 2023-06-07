@@ -32,14 +32,26 @@ All test experiments were conducted 10 times to calculate the average ACC and AU
 
 
 ## Usage
-Note: Random grouping can also be applied in TCGA training/testing. Embedding grouping is time-consuming. We provide [h5file_Dataset_with_Cluster_index] in [./Datasets/datasets.py] to speed up the process. Check the code for more information.
 ### Dataset
+
 #### TCGA Dataset
-We use the same configuration of data preprocessing as [DSMIL](https://github.com/binli123/dsmil-wsi).
+We use the same configuration of data preprocessing as [DSMIL](https://github.com/binli123/dsmil-wsi). Or you can directly download the feature vector they provided for TCGA.
 
 #### CAMELYON16 Dataset
 We use [CLAM](https://github.com/mahmoodlab/CLAM/tree/master) to preprocess CAMELYON16 at 20x.
 
+#### Preprocessed feature vector
+Preprocess WSI is time consuming and difficult. We also provide processed feature vector for two datasets. Aforementioned works [DSMIL](https://github.com/binli123/dsmil-wsi) and [CLAM](https://github.com/mahmoodlab/CLAM/tree/master) 
+greatly simplified the preprocessing. Thanks again to their wonderful works!
+<div align="center">
+| Dataset | Link | Disk usage |
+|------------|:-----:|----|
+| `TCGA`|[HF link](https://huggingface.co/datasets/RJKiseki/TCGA)| 16GB |
+| `CAMELYON16`|[HF link](https://huggingface.co/datasets/RJKiseki/CAMELYON16)|20GB|
+</div>
+
+
+### Test the model
 
 For TCGA testing:
 ```
