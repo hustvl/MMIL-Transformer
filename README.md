@@ -35,14 +35,18 @@ All test experiments were conducted 10 times to calculate the average ACC and AU
   ### Dataset
 
    #### Preprocess TCGA Dataset
-We use the same configuration of data preprocessing as [DSMIL](https://github.com/binli123/dsmil-wsi). Or you can directly download the feature vector they provided for TCGA.
-
+```
+>We use the same configuration of data preprocessing as [DSMIL](https://github.com/binli123/dsmil-wsi). Or you can directly download the feature vector they provided for TCGA.
+```
    #### Preprocess CAMELYON16 Dataset
-We use [CLAM](https://github.com/mahmoodlab/CLAM/tree/master) to preprocess CAMELYON16 at 20x.
-
+```
+>We use [CLAM](https://github.com/mahmoodlab/CLAM/tree/master) to preprocess CAMELYON16 at 20x.
+```
    #### Preprocessed feature vector
-Preprocess WSI is time consuming and difficult. We also provide processed feature vector for two datasets. Aforementioned works [DSMIL](https://github.com/binli123/dsmil-wsi) and [CLAM](https://github.com/mahmoodlab/CLAM/tree/master) 
+```
+>Preprocess WSI is time consuming and difficult. We also provide processed feature vector for two datasets. Aforementioned works [DSMIL](https://github.com/binli123/dsmil-wsi) and [CLAM](https://github.com/mahmoodlab/CLAM/tree/master) 
 greatly simplified the preprocessing. Thanks again to their wonderful works!
+```
 <div align="center">
   
 | Dataset | Link | Disk usage |
