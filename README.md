@@ -44,6 +44,7 @@ We use [CLAM](https://github.com/mahmoodlab/CLAM/tree/master) to preprocess CAME
 Preprocess WSI is time consuming and difficult. We also provide processed feature vector for two datasets. Aforementioned works [DSMIL](https://github.com/binli123/dsmil-wsi) and [CLAM](https://github.com/mahmoodlab/CLAM/tree/master) 
 greatly simplified the preprocessing. Thanks again to their wonderful works!
 <div align="center">
+  
 | Dataset | Link | Disk usage |
 |------------|:-----:|----|
 | `TCGA`|[HF link](https://huggingface.co/datasets/RJKiseki/TCGA)| 16GB |
