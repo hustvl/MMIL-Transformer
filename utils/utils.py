@@ -70,8 +70,7 @@ def cat_msg2cluster_group(x_groups,msg_tokens):
         try:
             temp = torch.cat((msg_tokens,x),dim=2)
         except Exception as e:
-            torch.save(msg_tokens,'msg.pth')
-            torch.save(x,'x.pth')
+            print('Error when cat msg tokens to sub-bags')
         x_groups_cated.append(temp)
 
     return x_groups_cated
