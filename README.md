@@ -1,7 +1,7 @@
 # Multi-level Multiple Instance Learning with Transformer for Whole Slide Image Classification
 
 ## Project Info
-This project is the official implementation of MMIL-Transformer proposed in paper [Multi-level Multiple Instance Learning with Transformer for Whole Slide Image Classification]
+This project is the official implementation of MMIL-Transformer proposed in paper [Multi-level Multiple Instance Learning with Transformer for Whole Slide Image Classification](https://arxiv.org/abs/2306.05029)
 
 ## Prerequisites
 
