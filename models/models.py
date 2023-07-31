@@ -139,7 +139,7 @@ class MultipleMILTransformer(nn.Module):
         self.msg_tokens_num = self.args.num_msg
         self.msgcls_token = nn.Parameter(torch.randn(1,1,1,self.args.embed_dim))
         #---> make sub-bags
-        print('try to grouping seq to ',self.args.num_subbags)
+        print('try to group seq to ',self.args.num_subbags)
         self.grouping = grouping(self.args.num_subbags,max_size=4300)
         if self.args.mode == 'random':
             self.grouping_features = self.grouping.random_grouping
