@@ -149,7 +149,8 @@ class MultipleMILTransformer(nn.Module):
             self.grouping_features = self.grouping.seqential_grouping
         elif self.args.mode == 'embed':
             self.grouping_features = self.grouping.embedding_grouping
-            
+        elif self.args.mode == 'idx':
+            self.grouping_features = self.grouping.idx_grouping
         self.msg_tokens = nn.Parameter(torch.zeros(1, 1, 1, self.args.embed_dim))
         self.cat_msg2cluster_group = cat_msg2cluster_group
         if self.args.ape:
@@ -177,8 +178,10 @@ class MultipleMILTransformer(nn.Module):
             x = x.float()
         if self.args.ape:
             x = x + self.absolute_pos_embed.expand(1,x.shape[1],self.args.embed_dim)
-
-        x_groups = self.grouping_features(x)
+        if self.args.mode == 'coords' or self.args.mode == 'idx':
+            x_groups = self.grouping_features(coords,x) 
+        else:
+            x_groups = self.grouping_features(x)
         msg_tokens = self.msg_tokens.expand(1,1,self.msg_tokens_num,-1)
         msg_cls = self.msgcls_token
         x_groups = self.cat_msg2cluster_group(x_groups,msg_tokens)
