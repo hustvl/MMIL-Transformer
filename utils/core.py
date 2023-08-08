@@ -96,8 +96,9 @@ class grouping:
         features = features.squeeze()
         k = KMeans(n_clusters=self.groups_num, random_state=0,n_init='auto').fit(coords.cpu().numpy())
         indices = self.indicer(k.labels_)
+        features_group = self.make_subbags(indices,features)
         
-        return indices
+        return features_group
     
     def embedding_grouping(self,features):
         features = features.squeeze()
@@ -121,4 +122,14 @@ class grouping:
         indices = np.array_split(range(N),self.groups_num)
         features_group = self.make_subbags(indices,features)
         
+        return features_group
+
+    def idx_grouping(self,idx,features):
+        idx = idx.cpu().numpy()
+        idx = idx.reshape(-1)
+        B, N, C = features.shape
+        features = features.squeeze()
+        indices = self.indicer(idx)
+        features_group = self.make_subbags(indices,features)
+
         return features_group
