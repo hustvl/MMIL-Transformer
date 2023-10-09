@@ -3,6 +3,9 @@
 ## Project Info
 This project is the official implementation of MMIL-Transformer proposed in paper [Multi-level Multiple Instance Learning with Transformer for Whole Slide Image Classification](https://arxiv.org/abs/2306.05029)
 
+## News
+A new grouping method(MSA grouping) and the corresponding pre-trained weights will be updated soon.
+
 ## Prerequisites
 
 * Python 3.8.10
